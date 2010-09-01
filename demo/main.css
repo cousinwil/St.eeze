@@ -1,0 +1,140 @@
+/* Body */
+
+body { 
+	background-color: #dec188;
+	background-image: url(images/bg-bamboo.jpg);
+  font: 14px 'Geneva', 'Arial', Sans-Serif;
+  font-weight: 500;
+  color: #efefef;
+  text-align: center;
+  font-size: 62.5%;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header {
+  margin: 48px 0;
+  width: 930px;
+  height: 241px;
+  background-image: url(images/steeze-header.png);
+  background-repeat: no-repeat;
+  background-position: 40%;
+}
+
+header:hover {
+  background-image: url(images/cousinwil-header.png);
+}
+
+section {
+  background-color: #000;
+  padding: 24px 48px 24px 24px;
+  width: 860px;
+  min-height: 500px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+article {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: dashed #dec188 4px;
+  width: 756px;
+}
+
+h1 {
+  font-size: 2.8em;
+  font-family: 'Lucida Grande', Arial;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #dec188;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-size: 2.3em;
+  font-weight: 700px;
+  margin: 10px 0;
+  color: #dec188;
+  line-height: 1.4em;
+}
+
+p {
+  font-size: 2.0em;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #f00;
+}
+
+small a {
+  color: #dec188;
+  font-weight: bold;
+  text-decoration: underline; 
+}
+
+ul {
+  margin: 20px 45px;
+}
+
+ul li {
+  list-style: decimal;
+  font-size: 2.0em;
+  font-family: 'Lucida Grande', Arial;
+  margin-bottom: 10px;
+}
+
+.main-color {
+  color: #fff; 
+}
+
+.highlight-color {
+  color: #f00;
+}
+
+/* if it's a link we want it to stand out from the rest of the 
+    .main-color text */
+a.main-color {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a.main-color:hover {
+  color: #f00;
+}
+
+/* if it's a link we want it to stand out from the rest of the 
+    .highlight-color text */
+a.highlight-color {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a.highlight-color:hover {
+  color: #fff; 
+}
+
+.main-bg {
+  background-color: #dec188;
+}
+
+.main-bg-color {
+  color: #dec188;
+}
+
+.highlight-bg {
+  background-color: #242424;
+}
