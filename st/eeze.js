@@ -71,6 +71,9 @@ var st = {
     
       main: function(){
         //console.log('inside home main init');
+        
+        /* sample initialization of a form object as seen in st.eeze.valid.join
+                   using the validate() jQuery plugin. */
         $(st.eeze.valid.join.element).validate(st.eeze.valid.join);
 
       }, // end st.init.sample 
