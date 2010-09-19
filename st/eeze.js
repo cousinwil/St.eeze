@@ -1,5 +1,4 @@
-/* Style + Ease = ST.EEZE.us Front End Starter-Kit 
-   v1.01 (Updated: 9/6/2010)
+/* Style + Ease = ST.EEZE.us Front End Starter-Kit v 0.11
    Author: Wil Everts - http://cousinwil.com - @cousinwil
   
    File: javascripts/buddy.js - A simple object oriented template to
