@@ -1,9 +1,15 @@
-Major components:
+Project Info:
 
-    * jQuery: MIT/GPL license
-    * HTML5Doctor CSS reset: Creative Commons 3.0 BY
-    * CSS Reset Reloaded: Public Domain
+  * Steeze front-end starter kit by Wil Everts (@cousinwil)
+  * http://st.eeze.us
+  * Version 1.11
+
+Licensed Components:
+
+  * jQuery: MIT/GPL license
+  * HTML5Doctor CSS reset: Creative Commons 3.0 BY
+  * CSS Reset Reloaded: Public Domain
 
 Everything else:
 
-    * Public Domain
+  * Public Domain
