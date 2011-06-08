@@ -5,7 +5,7 @@
   --------------------------------------------------------------------------- */
 
 
-var st = {
+var steeze = {
   
     /* Google Analytics - allows us to connect st.eeze.track to your GA acct
       ----------------------------------------------------------------------- */
@@ -15,62 +15,24 @@ var st = {
         pageTracker._trackPageview(tracked);
       }, // end st.google.track
     }, // end st.google
-
-
-  /* Eeze - data objects which make common functions look cleaner
-    ------------------------------------------------------------------------- */
-  
-  eeze: {
     
-    /* AJAX objects for cleaner .ajax() - see init for sample usage
-      ----------------------------------------------------------------------- */
-    ajax: {
-      
-    }, // end st.eeze.ajax
   
-    /* Validation objects for cleaner .validate() - see init for sample usage
-      ----------------------------------------------------------------------- */
-    valid: {
-      join: {
-        element: '#join',
-        errorContainer: '#join #error-msg',
-        rules: {
-          'user-name': { required: true, minlength: 5 },
-          'user-email': { required: true, email: true },
-          'user-password': { required: true, minlength: 6 }
-        },
-        messages: {
-          'user-name': 'Please enter your name.',
-          'user-email': 'We promise we won&rsquo;t spam you.',
-          'user-password': 'Six characters or more please.'
-        }
-      }          
-    }, // end st.eeze.valid
-      
-    us: 'http://cousinwil.com' // steeze was compiled & developed by @cousinwil
+  init: {
 
-  }, // end st.eeze
-    
   /* INITs for each controller or view or just as needed...
        These allow you to load up event handlers and functions specific to
        a template or view. 
        
        Each unique init, like my 'home' init, has a three init functions:
-           Main (on ready), load (on load), and resize (redraw absolute elem.)
-       
+           ready (on document ready), load (on load), and resize (on resize for redrawing 
+           absolute elements, etc.)
   --------------------------------------------------------------------------- */
-  
-  init: {
   
     home: {
     
-      main: function(){
-        //console.log('inside home main init');
+      ready: function(){
+        //console.log('inside home ready init');
         
-        /* sample initialization of a form object as seen in st.eeze.valid.join
-                   using the validate() jQuery plugin. */
-        $(st.eeze.valid.join.element).validate(st.eeze.valid.join);
-
       }, // end st.init.sample 
       
       load: function(){
