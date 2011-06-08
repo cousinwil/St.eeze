@@ -2,12 +2,17 @@ Project Info:
 
   * Steeze front-end starter kit by Wil Everts (@cousinwil)
   * http://st.eeze.us
-  * Version 0.11
+  * Version 0.2
+
+New in Version 0.2:
+
+  * Updated file names, toned down some of the code comments
+  * Created helper classes for CSS size-specific rounded corners, etc
+  * Updated the bare-index.html file  
 
 Licensed Components:
 
   * jQuery, MIT/GPL license
-  * jQuery validation plug-in 1.7, MIT/GPL license
   * HTML5Doctor CSS, Creative Commons 2.0
 
 Everything else:
