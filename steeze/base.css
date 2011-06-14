@@ -143,6 +143,10 @@ body {
   cursor: pointer;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 small, .small {
   font-size: .8em;
 }
@@ -182,11 +186,6 @@ html[xmlns] .clearfix {
   display: block;
 }
 
-.clear-fix {
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
 
 html.ie .clearfix {
   zoom: 1;  
@@ -195,6 +194,13 @@ html.ie .clearfix {
 
 * html.ie .clearfix {
   height: 1%;
+}
+
+/* Sometimes you just have to use the old method...                           */
+.clear-fix {
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 
 /* div.relative is super-useful sets everything inside's absolute position to 
