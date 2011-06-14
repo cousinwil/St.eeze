@@ -1,9 +1,8 @@
-/* Style + Ease = ST.EEZE.us Front End Starter-Kit v 0.11
+/* Style + Ease = ST.EEZE.us Front End Starter-Kit v 0.20
    Author: Wil Everts - http://cousinwil.com - @cousinwil
   
                                 (80 chars, the suggested maximum line length)-->
   --------------------------------------------------------------------------- */
-
 
 var steeze = {
   
