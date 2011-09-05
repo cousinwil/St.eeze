@@ -20,22 +20,22 @@ Project Info:
   Files:
     st.eeze/
       base/
-        base.css     - reset, clearfix, a couple useful reusable classes & sample 
-                      CSS3 declarations consolodated into one GET.
-        base.js      - base site javascript object: google analytics, google web 
-                      fonts, init functions
-     
-      base-index.html - base elements of a modern front end HTML5 template
-     
+        base.css - reset, clearfix, a couple useful reusable classes & sample 
+                   CSS3 declarations consolodated into one GET.
+        base.js  - base site javascript object: google analytics, google web 
+                   fonts, init functions
       rails_base/
-        app/views/layouts/base.html.erb - sample rails layout with some basic templating logic
-        public/javascripts/base.js - standard version
-        public/stylesheets/app.css - standard version
-        public/stylesheets/base.css - standard version
-        public/stylesheets/app.css - place for your app's css
+        app/views/layouts/base.html.erb - sample rails layout with some basic 
+                                          templating logic
+        public/javascripts/base.js      - standard version
+        public/stylesheets/app.css      - standard version
+        public/stylesheets/base.css     - standard version
+        public/stylesheets/app.css      - place for your app's css
+
+      base.html - base elements of a modern front end HTML5 template
     
 
-  I will be adding line by line documentation in github. Wonder why something is
+  I will be adding line by line documentation shortly. Wonder why something is
   here? There it will be... eventually.
 
 Licensed Components:
