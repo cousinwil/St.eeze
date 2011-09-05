@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if IE 6]><![endif]-->  
+<!--[if lt IE 8]> <html class="ie" lang="en"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:latin','Rokkitt:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+  <meta charset="utf-8">
+
+  <title><%= !params[:title] ? 'Steeze Base Rails Layout' : params[:title] %></title>
+  
+  <!-- og: == 'Open Graph Protocol' - Makes you Facebook "Like" Button & Share Friendly -->
+  <meta name="title" content="" property="og:title" />
+  <meta name="" content="" property="og:type" />
+  <meta name="" content="" property="og:url" />
+  <meta name="" content="" property="og:image" />
+  <meta name="" content="" property="og:site_name" />
+  <meta name="" content="" property="fb:admins" />
+  <meta name="description" content="" property="og:description" />
+  <meta name="copyright" content="" />
+  <meta name="author" content="" />
+  <%= csrf_meta_tag %>
+ 
+  <%= stylesheet_link_tag 'base', 'app', :media => "all" %>
+
+  <link rel="shortcut icon" href=""/>
+  <link rel="apple-touch-icon" href=""/>
+
+  <!--[if lte IE 8]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->   
+
+</head>
+<body>    
+  
+  <%= yield %>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+  <%= javascript_include_tag 'base' %>
+  <script type="text/javascript">
+    (function($) {
+      $(document).ready(function{
+        base.init.<%= !params[:controller] ? 'home' : params[:controller] %>.ready('See line 41 of bare-index.html to trace this call.');
+      });
+      $(window).load(function{
+        setTimeout(function(){ /* ensures it loads **after** the loading spinner stops */
+          base.init.<%= !params[:controller] ? 'home' : params[:controller] %>.load('See line 44 of bare-index.html to trace this call.');
+        }, 15);  
+      });
+      $(window).resize(function{ /* when the window is scaled y the user - absolute element redraws */
+        base.init.<%= !params[:controller] ? 'home' : params[:controller] %>.size('See line 49 of bare-index.html to trace this call.');
+      });      
+    })(jQuery);
+  </script>
+  <%= yield :view_specific_javascript %>
+  
+</body>
+<!-- we built this city on rock and roll (and rails, and steeze.) - @cousinwil -->
+</html>

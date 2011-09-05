@@ -19,12 +19,21 @@ Project Info:
 
   Files:
     st.eeze/
-     steeze/
-       base.css     - reset, clearfix, a couple useful reusable classes & sample 
+      base/
+        base.css     - reset, clearfix, a couple useful reusable classes & sample 
                       CSS3 declarations consolodated into one GET.
-       base.js      - base site javascript object: google analytics, google web 
+        base.js      - base site javascript object: google analytics, google web 
                       fonts, init functions
-    bare-index.html - base elements of a modern front end HTML5 template
+     
+      base-index.html - base elements of a modern front end HTML5 template
+     
+      rails_base/
+        app/views/layouts/base.html.erb - sample rails layout with some basic templating logic
+        public/javascripts/base.js - standard version
+        public/stylesheets/app.css - standard version
+        public/stylesheets/base.css - standard version
+        public/stylesheets/app.css - place for your app's css
+    
 
   I will be adding line by line documentation in github. Wonder why something is
   here? There it will be... eventually.
