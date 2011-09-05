@@ -35,13 +35,23 @@
   
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+  <script src="steeze/base.js" type="text/javascript"></script>
   <script type="text/javascript">
     (function($) {
-
-    
+      $(document).ready(function{
+        steeze.init.home.ready('See line 41 of bare-index.html to trace this call.');
+      });
+      $(window).load(function{
+        setTimeout(function(){ /* ensures it loads **after** the loading spinner stops */
+          steeze.init.home.load('See line 44 of bare-index.html to trace this call.');
+        }, 15);  
+      });
+      $(window).resize(function{ /* when the window is scaled y the user - absolute element redraws */
+        steeze.init.home.size('See line 49 of bare-index.html to trace this call.');
+      });      
     })(jQuery);
   </script>
   
 </body>
-<!-- we built this city on rock and roll. - @cousinwil -->
+<!-- we built this city on rock and roll (and steeze.) - @cousinwil -->
 </html>
