@@ -20,17 +20,7 @@ var base = {
     visit: function(tracked){
       console.log('Tracked: ' + tracked);
       pageTracker._trackPageview(tracked);
-    }, // end base.google.track
-    
-    font: function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    } // end base.google.font
+    } // end base.google.track
   }, // end base.google
   
   init: {
@@ -49,8 +39,6 @@ var base = {
       ready: function(info){
         
         // see www.google.com/webfonts for fonts. I prefer to load these on load
-        // WebFontConfig = { google: { families: [ 'Open+Sans:latin' ] } }; 
-        // base.google.font();
         console.log('steeze is inside base.init.home.ready. MSG: '+info);
         
       }, // end base.init.sample 
@@ -58,8 +46,6 @@ var base = {
       load: function(){
         
         // see www.google.com/webfonts for fonts. I prefer to loading these here
-        WebFontConfig = { google: { families: [ 'Open+Sans:latin' ] } };
-        base.google.font();
         console.log('steeze is inside base.init.load.ready. MSG: '+info);
           
       }, // end base.init.home.init.load     
