@@ -3,20 +3,8 @@
 <!--[if lt IE 8]> <html class="ie" lang="en"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Open+Sans:latin','Rokkitt:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
 
   <title></title>
@@ -52,15 +40,15 @@
   <script type="text/javascript">
     (function($) {
       $(document).ready(function(){
-        base.init.home.ready('See line 41 of bare-index.html to trace this call.');
+        base.init.home.ready('See the base.init.home.ready() init originally on line 43 of base.html to trace this call.');
       });
       $(window).load(function(){
         setTimeout(function(){ /* ensures it loads **after** the loading spinner stops */
-          base.init.home.load('See line 44 of bare-index.html to trace this call.');
+          base.init.home.load('See the base.init.home.load() init originally on line 47 of base.html to trace this call.');
         }, 15);  
       });
       $(window).resize(function(){ /* when the window is scaled y the user - absolute element redraws */
-        base.init.home.size('See line 49 of bare-index.html to trace this call.');
+        base.init.home.size('See the base.init.home.size() init originally on line 51 of base.html to trace this call.');
       });      
     })(jQuery);
   </script>
