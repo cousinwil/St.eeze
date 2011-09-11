@@ -287,27 +287,11 @@ html[xmlns] .clearfix {
     StartColorStr='#CCC', EndColorStr='#EFEFEF', GradientType=0);
 }
 
-/* .sample-web-font is a sample webfont loaded up using google web fonts 
-      on page load from within steeze.init.home.load() (base.js line 51)
-      I've also added a couple backups
-   
-   - tweak the values to fit your needs ------------------------------------- */
-
-.font-web-sans {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.font-web-serif {
-  font-family: 'Rokkitt', serif;
-}
-
-/* .rotate
-
-*/
+/* .rotate rotates an element */
 .rotate {
-  -moz-transform: rotate(8deg)
-  -webkit-transform: rotate(8deg)
-  -o-transform: rotate(8deg)
-  -ms-transform: rotate(8deg)
-  transform: rotate(8deg)
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }

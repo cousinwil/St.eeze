@@ -52,15 +52,15 @@
   <script type="text/javascript">
     (function($) {
       $(document).ready(function{
-        base.init.home.ready('See line 41 of bare-index.html to trace this call.');
+        base.init.home.ready('See line 55 of base.html to trace this call.');
       });
       $(window).load(function{
         setTimeout(function(){ /* ensures it loads **after** the loading spinner stops */
-          base.init.home.load('See line 44 of bare-index.html to trace this call.');
+          base.init.home.load('See line 59 of base.html to trace this call.');
         }, 15);  
       });
       $(window).resize(function{ /* when the window is scaled y the user - absolute element redraws */
-        base.init.home.size('See line 49 of bare-index.html to trace this call.');
+        base.init.home.size('See line 63 of base.html to trace this call.');
       });      
     })(jQuery);
   </script>

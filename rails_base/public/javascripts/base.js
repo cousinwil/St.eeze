@@ -43,14 +43,14 @@ var base = {
         
       }, // end base.init.sample 
       
-      load: function(){
+      load: function(info){
         
         // see www.google.com/webfonts for fonts. I prefer to loading these here
         console.log('steeze is inside base.init.load.ready. MSG: '+info);
           
       }, // end base.init.home.init.load     
       
-      size: function(){
+      size: function(info){
         console.log('steeze is inside st.init.size.ready. MSG: '+info);
           
       } // end base.init.home.resize
