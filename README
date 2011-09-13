@@ -35,8 +35,14 @@ Project Info:
       base.html - base elements of a modern front end HTML5 template
     
 
-  I will be adding line by line documentation shortly. Wonder why something is
-  here? There it will be... eventually.
+  Documentation:
+    base.html 
+      - St.eeze/base.html lines 1-7 (https://gist.github.com/1213174)
+      - St.eeze/base.html lines 8-22 (https://gist.github.com/1213183)
+      - St.eeze/base.html lines 24-34 (https://gist.github.com/1213325)
+      - St.eeze/base.html lines 38-62 (https://gist.github.com/1213350)
+      
+    More to come...
 
 Licensed Components:
 
