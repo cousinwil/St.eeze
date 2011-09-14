@@ -40,16 +40,16 @@
   <script type="text/javascript">
     (function($) {
       $(document).ready(function{
-        base.init.main.ready('See line 43 of base.html to trace this call.');
+        base.inits.main.ready('See line 43 of base.html to trace this call.');
       });
       $(window).load(function(){
         setTimeout(function(){ /* minimal timeout ensures things load **after** the browser spinner stops */
-          base.init.main.load('See line 47 of base.html to trace this call.');
+          base.inits.main.load('See line 47 of base.html to trace this call.');
           $(window).resize(function(){ /* when the window is scaled by the user - absolute element redraws */
-            base.init.main.size('See line 50 of base.html to trace this call.');
+            base.inits.main.size('See line 50 of base.html to trace this call.');
           });
           $(window).scroll(function(){ /* when the window is scrolled by the user - absolute element redraws */
-            base.init.main.scroll('See line 52 of base.html to trace this call.');
+            base.inits.main.scroll('See line 52 of base.html to trace this call.');
           });   
         }, 15);  
       });   
