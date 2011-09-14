@@ -34,26 +34,21 @@ var base = {
        redrawing absolute elements, etc.)
   --------------------------------------------------------------------------- */
   
-    home: {
+    main: {
     
       ready: function(info){
-        
-        // see www.google.com/webfonts for fonts. I prefer to load these on load
-        console.log('steeze is inside base.init.home.ready. MSG: '+info);
-        
-      }, // end base.init.sample 
-      
+        console.log('steeze is inside base.init.main.ready() MSG: '+info);
+      }, // end base.init.main.ready 
       load: function(info){
-        
-        // see www.google.com/webfonts for fonts. I prefer to loading these here
-        console.log('steeze is inside base.init.load.ready. MSG: '+info);
-          
-      }, // end base.init.home.init.load     
-      
+        console.log('steeze is inside base.init.main.load() MSG: '+info);          
+      }, // end base.init.main.load     
       size: function(info){
-        console.log('steeze is inside st.init.size.ready. MSG: '+info);
-          
-      } // end base.init.home.resize
+        console.log('steeze is inside base.init.main.size() MSG: '+info);
+      }, // end base.init.main.size
+      scroll: function(info){
+        console.log('steeze is inside base.init.main.scroll() MSG: '+info);
+      } // end base.init.main.size
+    
     }
     
   } // end base.init
