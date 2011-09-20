@@ -6,24 +6,7 @@
 
 var base = {
   
-  /* Google 
-  
-    base.google.visit - allows us to connect to your Google Analytics acct and 
-                          track visits which occur w/o page load. Track things 
-                          like which button was clicked, etc using some url 
-                          hackery
-                         
-    base.google.font  - downloads webfonts from google 
-                         
-  --------------------------------------------------------------------------- */
-  google: {    
-    visit: function(tracked){
-      console.log('Tracked: ' + tracked);
-      pageTracker._trackPageview(tracked);
-    } // end base.google.track
-  }, // end base.google
-  
-  init: {
+  inits: {
 
   /* INITs for each controller, view, just as needed...
        These allow you to load up event handlers and functions specific to
@@ -34,26 +17,21 @@ var base = {
        redrawing absolute elements, etc.)
   --------------------------------------------------------------------------- */
   
-    home: {
+    main: {
     
       ready: function(info){
-        
-        // see www.google.com/webfonts for fonts. I prefer to load these on load
-        console.log('steeze is inside base.init.home.ready. MSG: '+info);
-        
-      }, // end base.init.sample 
-      
+        console.log('steeze is inside base.inits.main.ready() MSG: '+info);
+      }, // end base.init.main.ready 
       load: function(info){
-        
-        // see www.google.com/webfonts for fonts. I prefer to loading these here
-        console.log('steeze is inside base.init.load.ready. MSG: '+info);
-          
-      }, // end base.init.home.init.load     
-      
+        console.log('steeze is inside base.inits.main.load() MSG: '+info);          
+      }, // end base.init.main.load     
       size: function(info){
-        console.log('steeze is inside st.init.size.ready. MSG: '+info);
-          
-      } // end base.init.home.resize
+        console.log('steeze is inside base.inits.main.size() MSG: '+info);
+      }, // end base.init.main.size
+      scroll: function(info){
+        console.log('steeze is inside base.inits.main.scroll() MSG: '+info);
+      } // end base.init.main.size
+    
     }
     
   } // end base.init
