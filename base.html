@@ -48,11 +48,16 @@
           base.init.home.load('See line 59 of base.html to trace this call.');
         }, 15);  
       });
-      $(window).resize(function{ /* when the window is scaled y the user - absolute element redraws */
+      $(window).resize(function(){ /* when the window is scaled y the user - absolute element redraws */
         base.init.home.size('See line 63 of base.html to trace this call.');
-      });      
+      });    
     })(jQuery);
   </script>
+  
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]-->
   
 </body>
 <!-- we built this city on rock and roll (and steeze.) - @cousinwil -->
